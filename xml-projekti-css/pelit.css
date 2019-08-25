@@ -1,0 +1,38 @@
+peli {
+    display: block;
+    margin: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgb(51, 207, 142);
+    width: 800px
+}
+nimi {
+    display: block;
+    font-size: 2em;
+    color: crimson;
+}
+kehittäjä {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+}
+julkaisuvuosi {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+}
+genre {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+}
+ikäraja {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+}
+tunnit {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+}

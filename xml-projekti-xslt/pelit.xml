@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pelit.xsl"?>
+
+<pelit>
+    <peli>
+        <nimi>Borderland 2</nimi>
+        <kehittäjä>Gearbox Software</kehittäjä>
+        <julkaisuvuosi>2012</julkaisuvuosi>
+        <genre>Räiskintä</genre>
+        <ikäraja>K-18</ikäraja>
+        <tunnit>379</tunnit>
+    </peli>
+    <peli>
+        <nimi>DmC Devil May Cry</nimi>
+        <kehittäjä>Ninja Theory</kehittäjä>
+        <julkaisuvuosi>2013</julkaisuvuosi>
+        <genre>Toiminta</genre>
+        <ikäraja>K-16</ikäraja>
+        <tunnit>46</tunnit>
+    </peli>
+    <peli>
+        <nimi>Fallout: New Vegas</nimi>
+        <kehittäjä>Obsidian Entertainment</kehittäjä>
+        <julkaisuvuosi>2010</julkaisuvuosi>
+        <genre>Roolipeli</genre>
+        <ikäraja>K-18</ikäraja>
+        <tunnit>51</tunnit>
+    </peli>
+    <peli>
+        <nimi>Grim Dawn</nimi>
+        <kehittäjä>Crate Entertainment</kehittäjä>
+        <julkaisuvuosi>2016</julkaisuvuosi>
+        <genre>Roolipeli</genre>
+        <ikäraja>K-18</ikäraja>
+        <tunnit>88</tunnit>
+    </peli>
+
+
+
+</pelit>

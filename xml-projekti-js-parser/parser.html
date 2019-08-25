@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pelit</title>
+</head>
+<body>
+<h1>Peli Lista</h1>
+
+<button onclick="loadXML()">Lataa Lista</button>
+<div id="pelit"></div>
+
+<script>
+function loadXML(){
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    parseXML(this);
+    
+    
+    }
+    };
+    xhttp.open("GET", "pelit.xml", true);
+    xhttp.send();
+}
+
+function parseXML(xml){
+    let i;
+    let htmlData = '<ul style"list-style-type: none; margin: 0;">'
+    const xmlDoc = xml.responseXML;
+    const pelit = xmlDoc.getElementsByTagName("pelit")
+    for (i = 0; i < pelit.length; i++) {
+        htmlData += "<li>";
+        htmlData += "<h2>" + pelit[i].getElementsByTagName("nimi")[0].childNodes[0].nodeValue + "</h2>";
+        htmlData += "<h3>" + pelit[i].getElementsByTagName("kehittäjä")[0].childNodes[0].nodeValue + "</h3>";
+        htmlData += "<p>" + pelit[i].getElementsByTagName("julkaisuvuosi")[0].childNodes[0].nodeValue + "</p>";
+        htmlData += "<p>" + pelit[i].getElementsByTagName("genre")[0].childNodes[0].nodeValue + "</p>";
+        htmlData += "<p>" + pelit[i].getElementsByTagName("ikäraja")[0].childNodes[0].nodeValue + "</p>";
+        htmlData += "<p>" + pelit[i].getElementsByTagName("tunnit")[0].childNodes[0].nodeValue + "</p>";
+        htmlData += "<br>";
+    }
+    htmlData += "</ul>";
+    
+    document.getElementById("pelit").innerHTML = htmlData;
+}
+</script>
+</body>
+</html>
